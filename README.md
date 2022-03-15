@@ -1,0 +1,2 @@
+# kubernetes-white-list-injector
+在对权限要求相对较高的云上场景中，您需要将Pod的IP地址动态的加入或移出指定服务的白名单，如数据库、slb等，以实现对权限最细粒度的控制。您可以通过ack-kubernetes-webhook-injector组件为Pod添加Annotation，动态的将Pod的IP地址加入或移出指定的白名单
