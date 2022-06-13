@@ -1,0 +1,10 @@
+apiVersion: apps.whitelist.fly.io/v1alpha1
+kind: Whitelist
+metadata:
+  name: whitelist-sample
+spec:
+  # TODO(user): Add fields here
+  provider: aliyun           
+  service: rds  
+  ipLevel: Node  
+  serviceId: "rm-bp1n796jb4q188q50"        

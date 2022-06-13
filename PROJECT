@@ -1,0 +1,20 @@
+domain: whitelist.fly.io
+layout:
+- go.kubebuilder.io/v3
+projectName: operator
+repo: operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: whitelist.fly.io
+  group: apps
+  kind: Whitelist
+  path: operator/api/v1alpha1
+  version: v1alpha1
+  webhooks:
+    defaulting: true
+    validation: true
+    webhookVersion: v1
+version: "3"
